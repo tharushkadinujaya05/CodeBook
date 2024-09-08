@@ -8,5 +8,6 @@ public class UserInputs {
         int age = scanner.nextInt(); // Read user input
 
         System.out.println("Hello "+ name+" You are"+age+" Years old"); // Output user input
+        scanner.close(); // closing scanner object
     }
 }
