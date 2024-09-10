@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Try....</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        let bulbsPurchased = undefined;
-        let fansPurchased = undefined;
-        let totalRevenue = (40*70) + (3*60);
+      let bulbsPurchased = 60;
+      let fansPurchased = 40;
+      let totalRevenue = fansPurchased * 70 + bulbsPurchased * 60;
 
-        if (bulbsPurchased >= 50 || fansPurchased>= 30){
-            document.write("")
-        }
+      if (bulbsPurchased >= 50 || fansPurchased >= 30) {
+        document.write("You are qualified for the discount");
+      } else {
+        document.write("You are not qualified for the discount");
+      }
     </script>
-</body>
+  </body>
 </html>
