@@ -15,13 +15,14 @@
 			<h2>Total Value : $<span id="total">0.00</span></h2>
 		</form>
         <script>
+			//function declaration
 			function totalValue(){
 				let price = document.getElementById("price").value;
 				let quantity = document.getElementById("quantity").value;
 
 				let total = price * quantity;
 				document.getElementById("total").innerHTML = total;
-			}
+			}	
 		</script>
 	</body>
 </html>
