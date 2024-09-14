@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateForm(){
+            if(document.form.username.value.length == 0){
+                alert("Username is empty");
+            } else if(document.form.password.value.length < 6){
+                alert("Password hould be more than 6 characters");
+            }else{
+                alert("Form is valid");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="form">
+        <label>UserName</label>
+        <input type="text" id="username"> <br><br>
+        <label>Password</label>
+        <input type="password" id="password"> <br><br>
+        <input type="button" value="Validate" onclick="validateForm()">
+    </form>
+</body>
+</html>
